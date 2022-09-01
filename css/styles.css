@@ -4,7 +4,7 @@
   --color-p: #757575;
   --color-but: #2196f3;
   --active-but: #188ce8;
-  --icon-colot: ;
+  --icon-color: #afb1b8;
 }
 
 body {
@@ -299,7 +299,26 @@ ul [href="tel:+380961111111"]:focus {
   font-size: 16px;
   line-height: 1.9;
   text-align: center;
-  padding-bottom: 30px;
+  margin-bottom: 16px;
+}
+.social-team {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.social-link {
+  display: flex;
+  fill: var(--icon-color);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+.social-item:hover .social-link {
+  fill: var(--background);
+  background-color: var(--color-but);
 }
 .section [type="button"] {
   height: 38px;
@@ -330,12 +349,14 @@ ul [href="tel:+380961111111"]:focus {
   padding-top: 30px;
   padding-bottom: 20px;
 }
-.section-team li {
+.list-team > li {
   background-color: var(--background);
   box-shadow: 0px 1px 3px #0000001f, 0px 1px 1px #00000024, 0px 2px 1px #00000033;
   border-radius: 0px 0px 4px 4px;
 }
-
+.link-address {
+  display: flex;
+}
 .container {
   width: 1200px;
   margin: 0 auto;
