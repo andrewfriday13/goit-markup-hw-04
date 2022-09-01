@@ -4,6 +4,7 @@
   --color-p: #757575;
   --color-but: #2196f3;
   --active-but: #188ce8;
+  --icon-colot: ;
 }
 
 body {
@@ -132,6 +133,7 @@ footer li:last-child {
 .products li:hover {
   box-shadow: 0px 1px 1px #0000001f, 0px 4px 4px #0000000f, 1px 4px 6px #00000029;
 }
+
 .products li {
   width: 370px;
   letter-spacing: 0.06em;
@@ -173,7 +175,25 @@ ul [href="tel:+380961111111"]:focus {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-.list-buttoms {
+
+.icon-contacts {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  fill: var(--color-p);
+}
+.icon-contacts:hover .icon-tap,
+.icon-contacts:focus .icon-tap {
+  fill: var(--color-but);
+}
+.icon-tap:hover,
+.icon-tap:focus {
+  fill: var(--color-but);
+}
+.list-item {
+  justify-content: center;
+}
+.li st-buttoms {
   display: flex;
   justify-content: center;
   gap: 8px;
@@ -189,6 +209,10 @@ ul [href="tel:+380961111111"]:focus {
 .hero {
   background-color: #2f303a;
   padding: 200px 0;
+  background-image: url(/images/bg-img.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
 }
 .hero-cap {
   color: var(--background);
