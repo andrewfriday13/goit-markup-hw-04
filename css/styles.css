@@ -73,7 +73,15 @@ p {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-
+.footer h2 {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
 footer [href="./index.html"] {
   display: block;
   color: var(--background);
@@ -361,4 +369,11 @@ ul [href="tel:+380961111111"]:focus {
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px 0 15px;
+}
+.social-footer {
+  display: flex;
+}
+.div {
+  display: flex;
+  gap: 70px;
 }
