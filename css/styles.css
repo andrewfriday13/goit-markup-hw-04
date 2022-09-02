@@ -5,6 +5,7 @@
   --color-but: #2196f3;
   --active-but: #188ce8;
   --icon-color: #afb1b8;
+  --bg-svg: #F5F4FA;
 }
 
 body {
@@ -112,6 +113,11 @@ footer li {
 footer li:last-child {
   margin-bottom: 0;
 }
+.social-footer{
+  display: flex;
+  gap: 10px;
+}
+
 .products {
   padding-top: 0;
   display: flex;
@@ -201,7 +207,7 @@ ul [href="tel:+380961111111"]:focus {
 .list-item {
   justify-content: center;
 }
-.li st-buttoms {
+.list-buttoms {
   display: flex;
   justify-content: center;
   gap: 8px;
@@ -217,7 +223,7 @@ ul [href="tel:+380961111111"]:focus {
 .hero {
   background-color: #2f303a;
   padding: 200px 0;
-  background-image: url(/images/bg-img.jpg);
+  background-image: url(/images/bg-img.jpg) ;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: contain;
@@ -273,7 +279,24 @@ ul [href="tel:+380961111111"]:focus {
 .skill p {
   line-height: 1.7;
 }
+.skill-item{
+  display: flex;
+  gap: 30px;
+}
+.skill-icon{
+background-color: var(--bg-svg);
+}
+.skill-list{
+  display: flex;
+  background-color: var(--bg-svg);
+  width: 270px;
+  height: 120px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  margin-bottom: 30px;
 
+}
 .section-title {
   font-size: 36px;
   line-height: 1.2;
@@ -323,6 +346,7 @@ ul [href="tel:+380961111111"]:focus {
   border-radius: 50%;
   align-items: center;
   justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);;
 }
 .social-item:hover .social-link {
   fill: var(--background);
@@ -370,10 +394,17 @@ ul [href="tel:+380961111111"]:focus {
   margin: 0 auto;
   padding: 0 15px 0 15px;
 }
-.social-footer {
-  display: flex;
-}
-.div {
+
+.socaial-footer {
   display: flex;
   gap: 70px;
+}
+.clients-item{
+  display: flex;
+  justify-content: center;
+}
+.clients-list{
+  width: 192px;
+  height: 70px;border: 1px solid #AFB1B8;
+    border-radius: 4px;
 }
