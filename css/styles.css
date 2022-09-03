@@ -228,11 +228,11 @@ ul [href="tel:+380961111111"]:focus {
 .hero {
   background-color: #2f303a;
   padding: 200px 0;
-      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(../images/bg-img.jpg);
+   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(../images/bg-img.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: contain;
-  
+  max-height: 1600px;
 }
 .hero-cap {
   color: var(--background);
