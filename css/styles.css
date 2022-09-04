@@ -3,11 +3,11 @@
   --background: #ffffff;
   --color-p: #757575;
   --color-but: #2196f3;
+  --color-but: #2196f3;
   --active-but: #188ce8;
   --icon-color: #afb1b8;
   --bg-svg: #F5F4FA;
 }
-
 body {
   color: var(--text);
   background-color: var(--background);
@@ -103,26 +103,43 @@ footer [href="https://goo.gl/maps/d5CcS2hFM6yTFQRFA"]
   line-height: 1.7;
   color: var(--background);
 }
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+.footer-link {
+  display: flex;
+  fill: var(--background);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);;
 }
-footer li {
-  margin-bottom: 9px;
+.social-item:hover .footer-link,
+.social-item:focus .footer-link{
+  fill: var(--background);
+  background-color: var(--color-but)
 }
 footer li:last-child {
   margin-bottom: 0;
 }
-.social-footer{
+
+.social-footer {
   display: flex;
   gap: 10px;
 }
-.footer-container{
+
+.footer-container {
   display: flex;
   align-items: baseline;
   gap: 70px;
 }
-
+.socaial-footer {
+  display: flex;
+  gap: 70px;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .products {
   padding-top: 0;
   display: flex;
@@ -209,8 +226,9 @@ ul [href="tel:+380961111111"]:focus {
 .icon-tap:focus {
   fill: var(--color-but);
 }
-.list-item {
+.list-item{
   justify-content: center;
+  margin-bottom: 9px;
 }
 .list-buttoms {
   display: flex;
@@ -230,9 +248,10 @@ ul [href="tel:+380961111111"]:focus {
   padding: 200px 0;
    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(../images/bg-img.jpg);
   background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: contain;
-  max-height: 1600px;
+  background-position: center ;
+  background-size: cover ;
+  max-width: 1600px;
+  margin: 0 auto ;
 }
 .hero-cap {
   color: var(--background);
@@ -258,6 +277,7 @@ ul [href="tel:+380961111111"]:focus {
   letter-spacing: 0.06em;
   margin: 0 auto;
   display: block;
+  cursor: pointer;
 }
 .buttom-cap:active {
   background-color: var(--active-but);
@@ -295,7 +315,6 @@ background-color: var(--bg-svg);
 .skill-list{
   display: flex;
   background-color: var(--bg-svg);
-  width: 270px;
   height: 120px;
   align-items: center;
   justify-content: center;
@@ -354,10 +373,15 @@ background-color: var(--bg-svg);
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.1);;
 }
+
 .social-item:hover .social-link,
 .social-item:focus .social-link {
   fill: var(--background);
   background-color: var(--color-but);
+}
+.clients-list:hover .clients-link,
+.clients-list:focus .clients-link{
+  fill: var(--color-but);
 }
 .section [type="button"] {
   height: 38px;
@@ -366,6 +390,7 @@ background-color: var(--bg-svg);
   border: 0;
   font-size: 16px;
   padding: 6px 22px;
+  cursor: pointer;
 }
 .section [type="button"]:hover,
 .section [type="button"]:focus {
@@ -401,16 +426,10 @@ background-color: var(--bg-svg);
   margin: 0 auto;
   padding: 0 15px 0 15px;
 }
-
-.socaial-footer {
-  display: flex;
-  gap: 70px;
-}
 .clients-item{
   display: flex;
   justify-content: center;
-  gap: 30px
-  ;
+  gap: 30px;
 }
 .clients-list{
   display: flex;
@@ -420,18 +439,16 @@ background-color: var(--bg-svg);
   align-items: center;
   justify-content: center;
 }
-.clients-list:hover {
-color: var(--active-but);
-}
-.svg:hover{
-  fill: var(--active-but);
-}
-.clients-btn{
-  fill: currentColor;
-}
-.clients-icon{
-fill: currentColor;}
-
 .clients h2{
   color: var(--text);
+}
+
+.clients-list:hover ,
+.clients-list:focus {
+border-color: var(--color-but);
+cursor: pointer;
+}
+.clients-list:hover .clients-link,
+.clients-list:focus .clients-link{
+  fill:var(--color-but);
 }
