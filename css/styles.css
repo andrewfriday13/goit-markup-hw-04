@@ -36,8 +36,8 @@ header {
 }
 .header-nav-link {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 28px;
+  padding-bottom: 28px;
 }
 span {
   color: var(--color-but);
@@ -54,7 +54,6 @@ ul {
 }
 a {
   text-decoration: none;
-  color: currentColor;
 }
 p {
   color: var(--color-p);
@@ -113,15 +112,11 @@ footer [href="https://goo.gl/maps/d5CcS2hFM6yTFQRFA"]
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.1);;
 }
-.social-item:hover .footer-link,
-.social-item:focus .footer-link{
+ul .footer-link:hover,
+ul .footer-link:focus {
   fill: var(--background);
   background-color: var(--color-but)
 }
-footer li:last-child {
-  margin-bottom: 0;
-}
-
 .social-footer {
   display: flex;
   gap: 10px;
@@ -135,6 +130,11 @@ footer li:last-child {
 .socaial-footer {
   display: flex;
   gap: 70px;
+}
+.list-contacts{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 .section {
   padding-top: 94px;
@@ -158,6 +158,7 @@ footer li:last-child {
   text-align: left;
   margin: 0 0px 4px 24px;
   letter-spacing: 0.06em;
+  color: var(--text);
 }
 
 .products p {
@@ -166,8 +167,12 @@ footer li:last-child {
   text-align: left;
   margin-left: 24px;
 }
-.products li:hover {
+.products .list-products:hover,
+.products .list-products:focus {
   box-shadow: 0px 1px 1px #0000001f, 0px 4px 4px #0000000f, 1px 4px 6px #00000029;
+}
+.section .list-produsct:hover{
+    box-shadow: 0px 1px 1px #0000001f, 0px 4px 4px #0000000f, 1px 4px 6px #00000029;
 }
 
 .products li {
@@ -208,8 +213,8 @@ ul [href="tel:+380961111111"]:focus {
 .list-address a {
   color: var(--color-p);
   letter-spacing: 0.02em;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 28px;
+  padding-bottom: 29px;
 }
 
 .icon-contacts {
@@ -228,7 +233,7 @@ ul [href="tel:+380961111111"]:focus {
 }
 .list-item{
   justify-content: center;
-  margin-bottom: 9px;
+  
 }
 .list-buttoms {
   display: flex;
@@ -348,7 +353,7 @@ background-color: var(--bg-svg);
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
-  margin-top: 30px;
+  padding-top: 30px;
   margin-bottom: 10px;
 }
 .section-team p {
@@ -361,7 +366,7 @@ background-color: var(--bg-svg);
   display: flex;
   gap: 10px;
   justify-content: center;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 .social-link {
   display: flex;
@@ -374,15 +379,12 @@ background-color: var(--bg-svg);
   background-color: rgba(255, 255, 255, 0.1);;
 }
 
-.social-item:hover .social-link,
-.social-item:focus .social-link {
+ ul .social-link:hover,
+ ul .social-link:focus{
   fill: var(--background);
   background-color: var(--color-but);
 }
-.clients-list:hover .clients-link,
-.clients-list:focus .clients-link{
-  fill: var(--color-but);
-}
+
 .section [type="button"] {
   height: 38px;
   background-color: #f5f4fa;
@@ -432,23 +434,31 @@ background-color: var(--bg-svg);
   gap: 30px;
 }
 .clients-list{
-  display: flex;
   width: 170px;
-  height: 90px;border: 1px solid #AFB1B8;
-  border-radius: 4px;
-  align-items: center;
-  justify-content: center;
+  height: 90px;
 }
 .clients h2{
   color: var(--text);
 }
 
-.clients-list:hover ,
-.clients-list:focus {
-border-color: var(--color-but);
-cursor: pointer;
+
+.clients-link {
+ display: flex;
+ border: 1px solid #AFB1B8;
+ border-radius: 4px;
+ align-items: center;
+ justify-content: center;
+ width: 100%;
+ height: 100% ;
+ color: var(--icon-color);
 }
-.clients-list:hover .clients-link,
-.clients-list:focus .clients-link{
-  fill:var(--color-but);
+ul .clients-link:hover .clients-icon,
+ul .clients-link:focus .clients-icon{
+fill: var(--color-but);
+}
+.clients-icon{
+  fill: currentColor;
+}
+.clients-link:hover{
+  border-color: var(--color-but);
 }
